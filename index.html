@@ -4,36 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook Group List</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Facebook groups List. Last Update 2024 Oct 21.">
+    <meta name="keywords" content="Facebook groups, Sri Lankan groups, marriage proposals, entertainment, community groups, Facebook community, Sri Lanka">
+    <meta property="og:title" content="Facebook Group List - FewFeed Family">
+    <meta property="og:description" content="Facebook groups List. Last Update 2024 Oct 21.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="og-img.png" />
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Global dark mode styles */
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Table design for compact and responsive layout */
+        table {
+            width: 100%;
+            margin-top: 1rem;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+        }
+
+        td {
+            background-color: #1b1b1b;
+            border-top: 1px solid #333;
+        }
+
+        /* Hover effect for table rows */
+        tr:hover td {
+            background-color: #292929;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Styling for the search bar */
+        input[type="text"] {
+            background-color: #1b1b1b;
+            border: 1px solid #333;
+            padding: 0.5rem;
+            color: #e0e0e0;
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        /* Link styling */
+        a {
+            color: #4ea5f7;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Facebook Group List</h1>
-        <button id="theme-toggle" class="theme-toggle">
-            <span class="icon">🌞</span>
-        </button>
-    </header>
-    <main>
-        <input type="text" id="search" placeholder="Search Groups...">
-        <ul id="group-list">
-            <li><a href="https://www.facebook.com/groups/473160748728316/" target="_blank">Kellange Numbers - කෙල්ලෙක් හොයාගමු</a></li>
-            <li><a href="https://www.facebook.com/groups/gahanulamai/" target="_blank">ගැහැණු ළමයි විතරයි</a></li>
-            <li><a href="https://www.facebook.com/groups/mangalasewaya/" target="_blank">මංගල යෝජනා Marriage proposal 💑💞💍</a></li>
-            <li><a href="https://www.facebook.com/groups/garmentkello/" target="_blank">ගාමන්ට් කෙල්ලො</a></li>
-            <li><a href="https://www.facebook.com/groups/lankawekello/" target="_blank">Lankawe Kello - ලංකාවේ කෙල්ලෝ</a></li>
-            <li><a href="https://www.facebook.com/groups/divorcelk/" target="_blank">ඩිවොස් වුන අය</a></li>
-            <li><a href="https://www.facebook.com/groups/mangalayojanawa/" target="_blank">කෙල්ලෝ - මංගල යෝජනා 💑💞💍</a></li>
-            <li><a href="https://www.facebook.com/groups/sandanifernando/" target="_blank">Sandani Fernando</a></li>
-            <li><a href="https://www.facebook.com/groups/srilankanniliyo/" target="_blank">නිලියෝ - Sri Lankan Actress Official</a></li>
-            <li><a href="https://www.facebook.com/groups/kellowitharai/" target="_blank">Kello Witharai - කෙල්ලෝ විතරයි</a></li>
-            <li><a href="https://www.facebook.com/groups/srilankanactress/" target="_blank">ලංකාවේ නිලියෝ - Sri Lankan Popular Actress</a></li>
-            <li><a href="https://www.facebook.com/groups/1609978159758538/" target="_blank">Michelle Dilhara</a></li>
-            <li><a href="https://www.facebook.com/groups/1428136651404589/" target="_blank">Sandani Fernando</a></li>
-            <li><a href="https://www.facebook.com/groups/mithuriyox/" target="_blank">Mithuriyo - මිතුරියෝ</a></li>
-            <li><a href="https://www.facebook.com/groups/933734844827393/" target="_blank">Sandani Fernando New 01</a></li>
-            <li><a href="https://www.facebook.com/groups/963751978616098/" target="_blank">Sandani Fernando New 02</a></li>
-        </ul>
-    </main>
+    <div class="container mx-auto p-4">
+        <header class="flex justify-between items-center mb-4">
+            <h1 class="text-xl font-bold">Facebook Group List</h1>
+        </header>
+        <input type="text" id="search" placeholder="Search Groups..." class="mb-4">
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+                <thead>
+                    <tr>
+                        <th>Group Name</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody id="group-list">
+                    <tr>
+                        <td>Kellange Numbers - කෙල්ලෙක් හොයාගමු</td>
+                        <td><a href="https://www.facebook.com/groups/473160748728316/" target="_blank">Visit Group</a></td>
+                    </tr>
+                    <tr>
+                        <td>ගැහැණු ළමයි විතරයි</td>
+                        <td><a href="https://www.facebook.com/groups/gahanulamai/" target="_blank">Visit Group</a></td>
+                    </tr>
+                    <tr>
+                        <td>මංගල යෝජනා Marriage proposal 💑💞💍</td>
+                        <td><a href="https://www.facebook.com/groups/mangalasewaya/" target="_blank">Visit Group</a></td>
+                    </tr>
+                    <tr>
+                        <td>ගාමන්ට් කෙල්ලො</td>
+                        <td><a href="https://www.facebook.com/groups/garmentkello/" target="_blank">Visit Group</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lankawe Kello - ලංකාවේ කෙල්ලෝ</td>
+                        <td><a href="https://www.facebook.com/groups/lankawekello/" target="_blank">Visit Group</a></td>
+                    </tr>
+                    <tr>
+                        <td>ඩිවොස් වුන අය</td>
+                        <td><a href="https://www.facebook.com/groups/divorcelk/" target="_blank">Visit Group</a></td>
+                    </tr>
+                    <tr>
+                        <td>කෙල්ලෝ - මංගල යෝජනා 💑💞💍</td>
+                        <td><a href="https://www.facebook.com/groups/mangalayojanawa/" target="_blank">Visit Group</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sandani Fernando</td>
+                        <td><a href="https://www.facebook.com/groups/sandanifernando/" target="_blank">Visit Group</a></td>
+                    </tr>
+                    <tr>
+                        <td>නිලියෝ - Sri Lankan Actress Official</td>
+                        <td><a href="https://www.facebook.com/groups/srilankanniliyo/" target="_blank">Visit Group</a></td>
+                    </tr>
+                    <tr>
+                        <td>Kello Witharai - කෙල්ලෝ විතරයි</td>
+                        <td><a href="https://www.facebook.com/groups/kellowitharai/" target="_blank">Visit Group</a></td>
+                    </tr>
+                    <tr>
+                        <td>ඩිවොස් අක්කිලා ඇන්ටිලා</td>
+                        <td><a href="https://www.facebook.com/groups/divorcesrilanka/" target="_blank">Visit Group</a></td>
+                    </tr>
+                    <tr>
+                        <td>Michelle Dilhara</td>
+                        <td><a href="https://www.facebook.com/groups/1609978159758538/" target="_blank">Visit Group</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sandani Fernando</td>
+                        <td><a href="https://www.facebook.com/groups/1428136651404589/" target="_blank">Visit Group</a></td>
+                    </tr>
+                    <tr>
+                        <td>Mithuriyo - මිතුරියෝ</td>
+                        <td><a href="https://www.facebook.com/groups/mithuriyox/" target="_blank">Visit Group</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sandani Fernando New 01</td>
+                        <td><a href="https://www.facebook.com/groups/933734844827393/" target="_blank">Visit Group</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sandani Fernando New 02</td>
+                        <td><a href="https://www.facebook.com/groups/963751978616098/" target="_blank">Visit Group</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
